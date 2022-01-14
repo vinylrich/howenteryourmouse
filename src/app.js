@@ -20,6 +20,8 @@ function afterCount(){
             if (countdown <= 0){
                 clearInterval(aftercounter);
                 alert("you entered " + enter.innerText + "!")
+                entercount=0
+                enter.innerText="Enter me!"
                 return;
             }
             countdown--;
